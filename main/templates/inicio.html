@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<!-- REVOLUTION SLIDER -->
+<div class="slider fullwidthbanner-container roundedcorners">
+	<div class="fullwidthbanner">
+		<ul class="hide">
+
+			<!-- SLIDE  -->
+			<li data-transition="fade" data-slotamount="14"  data-masterspeed="300" data-delay="10000">
+
+				<!-- COVER IMAGE -->
+				<img src="{% static 'assets/images/1x1.png' %}" data-lazyload="{% static 'assets/images/unsitiodigital/slide_1.jpg' %}" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+				<div class="tp-caption large_bold_black lfl stl"
+					data-x="10"
+					data-y="100"
+					data-speed="300"
+					data-start="500"
+					data-easing="easeOutExpo">Un Sitio Web
+				</div>
+
+				<div class="tp-caption large_bold_grey sft stb"
+					data-x="20"
+					data-y="160"
+					data-speed="300"
+					data-start="1000"
+					data-easing="easeOutExpo"> <small>para ti</small>
+				</div>
+
+				<div class="tp-caption large_bold_grey sft stb"
+					data-x="30"
+					data-y="220"
+					data-speed="500"
+					data-start="2000"
+					data-easing="easeOutExpo">o para tu empresa
+				</div>
+
+			</li>
+
+			<!-- SLIDE  -->
+			<li data-transition="fade" data-slotamount="14"  data-masterspeed="300" data-delay="10000">
+
+				<!-- COVER IMAGE -->
+				<img src="{% static 'assets/images/1x1.png' %}" data-lazyload="{% static 'assets/images/unsitiodigital/slide_2.jpg' %}" alt="" data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat" />
+
+				<div class="tp-caption sft medium_bg_darkblue" 
+					data-x="1010" 
+					data-y="50" 
+					data-speed="300" 
+					data-start="1300" 
+					data-easing="easeOutExpo"><i class="fa fa-check-circle"></i>
+				</div>
+
+				<div class="tp-caption sft medium_bg_asbestos" 
+					data-x="1050" 
+					data-y="50" 
+					data-speed="300" 
+					data-start="1300" 
+					data-easing="easeOutExpo">NOS ENCANTA EL DESARROLLO WEB
+				</div>
+
+			</li>
+
+		</ul>
+		<div class="tp-bannertimer"></div>
+	</div>
+</div>
+<!-- /REVOLUTION SLIDER -->
+
+
+<!-- CALLOUT -->
+<div class="callout dark"><!-- add "styleBackgroundColor" class for colored background and white text OR "dark" for a dark callout -->
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-9"><!-- title + shortdesc -->
+				<h3>Construimos sitios web utilizando las mejores herramientas de dessarrolo que ofrece la tecnología</h3>
+			</div>
+
+			<div class="col-md-3"><!-- button -->
+				<a href="#purchase" rel="nofollow" target="_blank" class="btn btn-primary btn-lg">Contacto</a>
+			</div>
+
+		</div>
+
+	</div>
+</div>
+<!-- /CALLOUT -->
+
+<!-- WELCOME -->
+<section>
+	<div class="container">
+
+		<!-- FEATURED BOXES 3 -->
+		<div class="row featured-box-minimal">
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<h4><i class="fa fa-group"></i> Rápido</h4>
+				<p>El sitio web estará listo en una semana, después de que hayas elegido las fotos y el texto.</p>
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<h4><i class="fa fa-code"></i> Moderno</h4>
+				<p>Utilizamos las mejores tecnología de desarrollo web. HTML5/CSS3 y varios Frameworks.</p>
+			</div>
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<h4><i class="fa fa-bars"></i> Flexible</h4>
+				<p>Adaptamos cada parte del sitio web a la imagen de tu empresa. Por favor revisa las diferentes<a href="">opciones</a>.</p>
+			</div>
+
+
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<h4><i class="fa fa-google-plus"></i> Seguro</h4>
+				<p>Damos soporte gratuito por 6 meses después de publicado el sitio. Nos aseguramos que el sitio esté protegido contra ataques y hacks.</p>
+			</div>
+
+		</div>
+		<!-- /FEATURED BOXES 3 -->
+
+	</div>
+</section>
+<!-- /WELCOME -->
+
+{% endblock content %}

@@ -1,0 +1,332 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<!-- CONTENT -->
+<section>
+	<div class="container">
+
+		<!-- BORN TO BE A WINNER -->
+		<article class="row">
+
+			<div class="col-md-6">
+
+				<div class="owl-carousel controlls-over" data-plugin-options='{"items": 1, "singleItem": true, "navigation": true, "pagination": true, "transitionStyle":"fadeUp"}'>
+
+					<div>
+						<img class="img-responsive" src="{% static 'assets/images/unsitiodigital/yo_2.jpg' %}" width="555" height="311" alt="">
+					</div>
+
+					<!--
+					<div>
+						<img class="img-responsive" src="assets/images/demo/people/me_2.jpg" width="555" height="311" alt="">
+					</div>
+					-->
+
+				</div>
+
+			</div>
+
+			<div class="col-md-6">
+
+				<h3>Alejandro Veintimilla</h3>
+				<a href="#" class="btn btn-sm ico-only rounded btn-linkedin" title="Perfil en LinkedIn"><i class="fa fa-linkedin"></i></a>
+				<hr />
+
+				<p class="lead">Trabajo desde la ciudad de Quito, Ecuador.</p>
+
+				<div class="row">
+				</div>
+
+				<p>Soy un programador autodidacta dedicado por completo al desarrollo web desde hace dos años. Tengo experiencia en desarrollo web de sitios complejos (sistemas académicos, foros, redes sociales, web APIs) y en páginas simples (lo que necesita una empresa normalmente (Presentación|Productos|Contáctanos|etc). <br><br> Puedo trabajar a distancia apoyándome en Hangouts o Skype y si usted o su empresa se encuentran en Ecuador, podríamos reunirnos personalmente.</p>
+
+			</div>
+
+		</article>
+		<!-- /BORN TO BE A WINNER -->
+	
+
+		<hr /><!-- separator -->
+
+
+		<!-- CIRCULAR BAR -->
+		<div class="row text-center margin-bottom60">
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+
+				<div class="circular-bar">
+					<canvas></canvas><input class="knob" data-linecap="round" data-bgcolor="rgba(0,0,0,0.1)" data-fgcolor="#1980B6" data-thickness="0.15" value="95" data-readonly="true" data-displayinput="false" readonly="readonly">
+					<div class="circular-bar-content">
+						<strong>PYTHON</strong>
+						<label>95%</label>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+
+				<div class="circular-bar">
+					<canvas></canvas><input class="knob" data-linecap="round" data-bgcolor="rgba(0,0,0,0.1)" data-fgcolor="#1980B6" data-thickness="0.15" value="90" data-readonly="true" data-displayinput="false" readonly="readonly">
+					<div class="circular-bar-content">
+						<strong>HTML5</strong>
+						<label>100%</label>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+
+				<div class="circular-bar">
+					<canvas></canvas><input class="knob" data-linecap="round" data-bgcolor="rgba(0,0,0,0.1)" data-fgcolor="#1980B6" data-thickness="0.15" value="90" data-readonly="true" data-displayinput="false" readonly="readonly">
+					<div class="circular-bar-content">
+						<strong>JAVASCRIPT</strong>
+						<label>90%</label>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="col-md-3 col-sm-3 col-xs-6">
+
+				<div class="circular-bar">
+					<canvas></canvas><input class="knob" data-linecap="round" data-bgcolor="rgba(0,0,0,0.1)" data-fgcolor="#1980B6" data-thickness="0.15" value="60" data-readonly="true" data-displayinput="false" readonly="readonly">
+					<div class="circular-bar-content">
+						<strong>CSS3</strong>
+						<label>60%</label>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+		<!-- CIRCULAR BAR -->
+
+	</div><!-- /.container -->
+
+
+	<!-- parallax -->
+	<div class="parallax parallax-1 margin-bottom60" style="background-image:url({% static 'assets/images/unsitiodigital/slide_1.jpg' %});">
+		<span class="parallax-overlay"></span>
+
+		<div class="container parallax-content">
+
+			<div class="row">
+				<h3>Trabajo en coordinación con un equipo de diseñadores / desarrolladores / fotógrafos para <br> <br> satisfacer todas las necesidades de tu empresa
+				</h3>
+			</div>
+
+
+		</div>
+
+	</div>
+	<!-- /parallax -->
+
+
+<section class="container">
+
+	<!-- CUSTOM CONTENT BOX -->
+
+		<div class="row">
+		<h3>El <strong>Equipo</strong></h3>
+
+			<div class="col-sm-4 col-md-4">
+				<div class="box-content thumbnail text-center">
+					<a href="page-about-me.html" class="item-image">
+						<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/9.jpg' %}" alt="" />
+						<h3>
+							<span>Edgar Dávila</span> <br/>
+							<small>Fotógrafo</small>
+						</h3>
+					</a>
+					<div class="caption text-left">
+						<ul class="list-icon check">
+							<li>Fotografía de Arquitectura</li>
+							<li>Fotografía Corporativa</li>							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-md-4">
+				<div class="box-content thumbnail text-center">
+					<a href="page-about-me.html" class="item-image">
+						<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/10.jpg' %}" alt="" />
+						<h3>
+							<span>María José Guzmán</span> <br />
+							<small>Diseñadora</small>
+						</h3>
+					</a>
+					<div class="caption text-left">
+						<ul class="list-icon check">
+							<li>Diseño Logos</li>
+							<li>Diseño Imagen Empresarial</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4 col-md-4">
+				<div class="box-content thumbnail text-center">
+					<a href="page-about-me.html" class="item-image">
+						<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/11.jpg' %}" alt="" />
+						<h3>
+							<span>Sebastián Viteri</span> <br/>
+							<small>Desarrollador</small>
+						</h3>
+					</a>
+					<div class="caption text-left">
+						<ul class="list-icon check">
+							<li>Wordpress</li>
+							<li>Javascript, HTML5, CSS3</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- /CUSTOM CONTENT BOX -->
+	<div class="divider"><!-- divider -->
+		<i class="fa fa-chevron-down"></i>
+	</div>
+
+	<!--
+	<div class="row">
+
+		<h3>Otros sitios web <strong>acerca de nosotros</strong></h3>
+		
+		<div class="col-sm-6 col-md-6">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/9.jpg' %}" alt="" />
+					<h3>
+						<span>Edgar Dávila</span> <br/>
+						<small>Fotógrafo</small>
+					</h3>
+				</a>
+				<div class="caption text-left">
+					<ul class="list-icon check">
+						<li>Fotografía de Arquitectura</li>
+						<li>Fotografía Corporativa</li>							
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-4 col-md-4">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/10.jpg' %}" alt="" />
+					<h3>
+						<span>María José Guzmán</span> <br />
+						<small>Diseñadora</small>
+					</h3>
+				</a>
+				<div class="caption text-left">
+					<ul class="list-icon check">
+						<li>Diseño Logos</li>
+						<li>Diseño Imagen Empresarial</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-4 col-md-4">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/demo/people/fixed-height/11.jpg' %}" alt="" />
+					<h3>
+						<span>Sebastián Viteri</span> <br/>
+						<small>Desarrollador</small>
+					</h3>
+				</a>
+				<div class="caption text-left">
+					<ul class="list-icon check">
+						<li>Wordpress</li>
+						<li>Javascript, HTML5, CSS3</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+
+	<div class="row">
+		
+		<hr class="half-margins invisible"/>
+
+		<h3>Algunos de nuestros <strong>Sitios Web</strong></h3>
+		
+		<div class ="row">
+		<div class="col-sm-4 col-md-4">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/unsitiodigital/logo_unsitiodigital.png' %}" alt="" />
+					<h3>
+						<span>Letras.Club</span> <br/>
+						<small>Red Social</small>
+					</h3>
+				</a>
+			</div>
+		</div>
+
+		<div class="col-sm-4 col-md-4">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/unsitiodigital/logo_unsitiodigital.png' %}" alt="" />
+					<h3>
+						<span>KuFlotarium</span><br/>
+						<small>Cámaras de Flotación</small>
+					</h3>
+				</a>
+			</div>
+		</div>
+
+		<div class="col-sm-4 col-md-4">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/unsitiodigital/logo_unsitiodigital.png' %}" alt="" />
+					<h3>
+						<span>Bospas</span> <br/>
+						<small>Hostal & Voluntariado</small>
+					</h3>
+				</a>
+			</div>
+		</div>
+		</div>
+
+		<div class ="row">
+		<div class="col-sm-4 col-md-4">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/unsitiodigital/logo_unsitiodigital.png' %}" alt="" />
+					<h3>
+						<span>CNT</span> <br/>
+						<small>WEB API</small>
+					</h3>
+				</a>
+			</div>
+		</div>
+
+		<div class="col-sm-4 col-md-4">
+			<div class="box-content thumbnail text-center">
+				<a href="page-about-me.html" class="item-image">
+					<img class="img-responsive" src="{% static 'assets/images/unsitiodigital/logo_unsitiodigital.png' %}" alt="" />
+					<h3>
+						<span>COIA</span> <br/>
+						<small>Servicios</small>
+					</h3>
+				</a>
+			</div>
+		</div>
+		</div>
+	</div>
+
+</section>
+<!-- /CONTENT -->
+
+</section>
+<!-- /CONTENT -->
+{% endblock content %}

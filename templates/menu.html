@@ -1,0 +1,60 @@
+{% load staticfiles %}
+
+<div id="header"><!-- class="sticky" for sticky menu -->
+	<!-- Top Nav -->
+	<header id="topNav">
+		<div class="container">
+
+			<!-- Mobile Menu Button -->
+			<button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+				<i class="fa fa-bars"></i>
+			</button>
+
+			<!-- Top Nav -->
+			<div class="navbar-collapse nav-main-collapse collapse">
+				<nav class="nav-main">
+					<a class="logo" href="index.html">
+						<img src="{% static 'assets/images/unsitiodigital/logo_unsitiodigital.png' %}" height="50" alt=""/>
+						UnSitio.Digital
+					</a>
+
+					<!--
+						NOTE
+						
+						For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+						Direct Link Example: 
+
+						<li>
+							<a href="#">HOME</a>
+						</li>
+					-->
+					<ul id="topMain" class="nav nav-pills nav-main pull-right">
+						<li>
+							<a href="{% url 'main:inicio' %}">Inicio
+							<span>bienvenido</span>
+							</a>
+						</li>
+						<li>
+							<a href="{% url 'main:quienes_somos' %}">Quiénes Somos
+								<span>el equipo</span>
+							</a>
+						</li>
+						<li>
+							<a href="{% url 'main:opciones' %}">Opciones
+								<span>precios</span>
+							</a>
+						</li>
+						<li>
+							<a href="{% url 'main:contacto' %}">Contacto
+							</a>
+						</li>
+					</ul>
+
+				</nav>
+			</div>
+			<!-- /Top Nav -->
+
+		</div><!-- /.container -->
+	</header>
+	<!-- /Top Nav -->
+</div>

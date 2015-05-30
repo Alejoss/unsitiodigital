@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<!-- GOOGLE MAP -->
+<div id="gmap" class="grayscale"><!-- map container --></div>
+<script type="text/javascript">
+	var	$googlemap_latitude 	= -0.20459983,
+		$googlemap_longitude	= -78.49003616,
+		$googlemap_zoom			= 16;
+</script>
+<!-- /GOOGLE MAP -->
+
+
+<!-- CONTENT -->
+<section>
+	<div class="container">
+
+		<div class="row">
+
+			<!-- FORM -->
+			<div class="col-md-8">
+
+				<h3><strong>Contáctanos</strong>, usa este formulario o llámanos por teléfono</h3>
+
+				<form id="contactForm" action="{% url 'main:contacto' %}" method="post">
+					{% csrf_token %}
+					<div class="row">
+						<div class="form-group">
+							<div class="col-md-12">
+								<label>Email</label>
+								{{form.email}}
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+							<div class="col-md-12">
+								<label>Tema</label>
+								{{form.tema}}
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group">
+							<div class="col-md-12">
+								<label>Message</label>
+								{{form.mensaje}}
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">							
+							<input type="submit" value="Enviar" class="btn btn-primary btn-lg" id="contact_submit" />
+						</div>
+					</div>
+				</form>
+
+			</div>
+			<!-- /FORM -->
+
+
+			<!-- INFO -->
+			<div class="col-md-4">
+
+				<p>
+					Por favor, contáctanos antes de confirmar una cita en nuestras oficinas en Quito.
+				</p>
+
+				<div class="divider half-margins"><!-- divider --></div>
+
+				<p>
+					<span class="block"><strong><i class="fa fa-map-marker"></i> Dirección:</strong> Foch y 6 de Diciembre</span>
+					<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> 0998375445 / 022374160</span>
+					<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> alejo@gmail.com</span>
+				</p>
+
+			</div>
+			<!-- /INFO -->
+		</div>
+	</div>
+</section>
+<!-- /CONTENT -->
+
+
+{% endblock %}

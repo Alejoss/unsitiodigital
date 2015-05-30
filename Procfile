@@ -1,0 +1,1 @@
+web: gunicorn unsitiodigital.wsgi --log-file -

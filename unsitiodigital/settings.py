@@ -12,7 +12,7 @@ SECRET_KEY = '=rj)&srtvd++h5jj_$x3^cl@_o(2!ypid7no3j2m3&igtq6p$@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-HEROKU = False
+HEROKU = True
 
 ALLOWED_HOSTS = ["*"]
 
